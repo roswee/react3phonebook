@@ -3,7 +3,6 @@ import { Component } from "react";
 export class ContactsList extends Component {
     render() {
         const {contacts, deleteHandler} = this.props
-        console.log(contacts)
         return (
             <ul>
                 {contacts.map((contact) =>
