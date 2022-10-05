@@ -1,9 +1,12 @@
 import { Phonebook } from "./Phonebook/Phonebook";
+import style from "components/Phonebook/Phonebook.module.scss"
 
+const {phonebook} = style
 
 export const App = () => {
   return (
     <div
+    className={phonebook}
       style={{
         height: '100vh',
         justifyContent: 'center',

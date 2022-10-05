@@ -1,4 +1,5 @@
 import { Component } from "react";
+import PropTypes from 'prop-types';
 
 export class ContactsList extends Component {
     render() {
@@ -10,4 +11,9 @@ export class ContactsList extends Component {
             </ul>
         )
     }
+};
+
+ContactsList.propTypes = {
+    contacts: PropTypes.array,
+    deleteHandler: PropTypes.func
 }

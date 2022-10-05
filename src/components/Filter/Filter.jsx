@@ -1,4 +1,5 @@
 import { Component } from "react";
+import PropTypes from 'prop-types'
 
 export class Filter extends Component {
 
@@ -12,4 +13,8 @@ export class Filter extends Component {
 
         )
     }
+}
+
+Filter.propTypes = {
+  handleFinder: PropTypes.func
 }
